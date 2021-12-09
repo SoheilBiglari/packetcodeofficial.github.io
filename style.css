@@ -1,0 +1,524 @@
+            @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+            /* start home page*/
+            
+            header {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 40px 100px;
+                z-index: 1000;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            header ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            header ul li {
+                position: relative;
+                list-style: none;
+            }
+            
+            header ul li a {
+                color: #fff;
+                position: relative;
+                margin: 0 15px;
+                text-decoration: none;
+                letter-spacing: 2px;
+            }
+            
+            header .logo {
+                color: #fff;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+            
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                margin-left: 2rem;
+            }
+            
+            .showcase video {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0.9;
+            }
+            
+            .text {
+                position: relative;
+                z-index: 10;
+            }
+            
+            .text h2 {
+                font-size: 5em;
+                font-weight: 800;
+                color: #fff;
+                line-height: 1em;
+                text-transform: uppercase;
+            }
+            
+            .text h3 {
+                font-size: 4em;
+                font-weight: 700;
+                color: #fff;
+                line-height: 1em;
+                text-transform: uppercase;
+            }
+            
+            .text p {
+                font-size: 1.1em;
+                color: #fff;
+                margin: 20px 0;
+                font-weight: 500;
+                max-width: 700px;
+            }
+            
+            .text a {
+                display: inline-block;
+                font-size: 1em;
+                background: #fff;
+                padding: 10px 30px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 500;
+                margin-top: 10px;
+                letter-spacing: 3px;
+                transition: 0.2s;
+            }
+            
+            .text a:hover {
+                letter-spacing: 6px;
+            }
+            
+            .inner-footer {
+                background-color: #221e3f;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .social ul {
+                display: flex;
+                justify-content: center;
+            }
+            
+            .items {
+                list-style: none;
+                padding: 10px 20px;
+                margin-top: 2rem;
+            }
+            
+            .items a {
+                padding: 10px 20px;
+                font-size: 35px;
+            }
+            
+            .quick-links {
+                display: flex;
+                justify-content: center;
+                margin-top: 1rem;
+            }
+            
+            .quick-links ul {
+                display: flex;
+                margin-bottom: 1rem;
+            }
+            
+            .quick-item {
+                list-style: none;
+            }
+            
+            .quick-item a {
+                font-size: 18px;
+                text-decoration: none;
+                padding: 0px 17px;
+                color: #ffff;
+            }
+            /* end home page*/
+            /* start line-up page*/
+            
+            #header-lineup {
+                background-color: #221e3f;
+            }
+            
+            .main-lineup {
+                display: grid;
+                grid-gap: 2rem;
+                margin: 14rem;
+                grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+                margin-top: 0;
+                margin-bottom: 2rem;
+            }
+            
+            .box-lineup {
+                height: 215px;
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+            }
+            
+            .box-lineup h3 {
+                text-align: center;
+                font-size: 25px;
+                margin-top: 10rem;
+            }
+            
+            .box-lineup h3 a {
+                color: white;
+                text-decoration: none;
+            }
+            
+            .box-lineup img {
+                position: absolute;
+                top: 0;
+                height: 110%;
+                width: 100%;
+                z-index: -1;
+            }
+            
+            .box-lineup:hover {
+                transform: scale(1.035, 1.035);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            }
+            
+            .box-lineup:hover img {
+                transform: translateY(-10px);
+            }
+            
+            .container-datum {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: 100px auto;
+                padding-top: 10rem;
+                padding-bottom: 2rem;
+                margin-left: 15rem;
+                margin-right: 15rem;
+                grid-gap: 1rem;
+            }
+            
+            .container-datum div {
+                text-align: center;
+                border: solid 1px #eee;
+                background-color: cyan;
+            }
+            
+            .container-datum span {
+                font-size: 50px;
+                font-weight: bold;
+                color: white;
+                align-items: center;
+            }
+            /* end line-up page*/
+            /* start ticket page*/
+            
+            .container-ticket {
+                display: grid;
+                grid-template-columns: 600px 600px 600px;
+                grid-template-rows: 400px;
+                grid-gap: 2rem;
+                justify-content: center;
+            }
+            
+            .item-ticket {
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+            }
+            
+            .item-ticket img {
+                position: absolute;
+                top: 0;
+                height: 110%;
+                width: 100%;
+                z-index: -1;
+            }
+            
+            .item-ticket h3 {
+                text-align: center;
+                font-size: 25px;
+                margin-top: 20rem;
+                color: #fff;
+            }
+            
+            .item-ticket:hover {
+                transform: scale(1.035, 1.035);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            }
+            
+            .item-ticket:hover img {
+                transform: translateY(-10px);
+            }
+            
+            #info-ticket h1 {
+                text-align: center;
+                color: rebeccapurple;
+                margin-top: 4rem;
+            }
+            
+            #info-ticket p {
+                background-color: #000;
+                margin: 2em;
+                padding: 2em;
+                color: #fff;
+                text-align: center;
+            }
+            
+            #info-ticket h2 {
+                margin: 1em;
+                padding: 1em;
+                color: rebeccapurple;
+                text-align: center;
+            }
+            /* end tickets page*/
+            /* start hotel page*/
+            
+            .container-hotels {
+                display: grid;
+                grid-template-columns: 600px 600px 600px;
+                grid-template-rows: 400px 400px 400px;
+                grid-gap: 2rem;
+                justify-content: center;
+            }
+            
+            .item-hotels {
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+            }
+            
+            .item-hotels img {
+                position: absolute;
+                top: 0;
+                height: 110%;
+                width: 100%;
+                z-index: -1;
+            }
+            
+            .item-hotels h3 {
+                text-align: center;
+                font-size: 25px;
+                margin-top: 20rem;
+                color: #fff;
+            }
+            
+            .item-hotels:hover {
+                transform: scale(1.035, 1.035);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            }
+            
+            .item-hotels:hover img {
+                transform: translateY(-10px);
+            }
+            
+            .main-hotels {
+                display: grid;
+                grid-gap: 2rem;
+                margin: 14rem;
+                grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+                margin-top: 16rem;
+                margin-bottom: 3.5rem;
+            }
+            
+            .main-hotels h3 {
+                text-align: center;
+                font-size: 20px;
+                margin-top: 5rem;
+                color: #FFF;
+            }
+            
+            .book-button {
+                font-size: 1em;
+                background-color: #ff0081;
+                color: #fff;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+                position: relative;
+                height: 30px;
+                transition: background-color 650ms;
+            }
+            
+            .book-button:hover {
+                background-color: #ffe838;
+            }
+            /* end hotel page */
+            /* start contact page */
+            
+            .container-contact {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .contact h1 {
+                text-align: center;
+                color: #FFF;
+                padding-top: 5rem;
+                font-size: 40px;
+            }
+            
+            .contact-info {
+                color: #fff;
+                max-width: 500px;
+                line-height: 65px;
+                padding-left: 50px;
+                font-size: 18px;
+            }
+            
+            .contact-info i {
+                margin-right: 20px;
+                font-size: 25px;
+            }
+            
+            .contact {
+                background-color: #221e3f;
+                width: 100%;
+                height: 100%;
+            }
+            
+            .container {
+                margin: 0;
+                padding: 0;
+                padding-bottom: 100px;
+                padding-bottom: 20rem;
+            }
+            
+            form {
+                width: 40%;
+                margin: 0 auto;
+            }
+            
+            form label {
+                font-size: 1.5rem;
+            }
+            
+            input,
+            select,
+            textarea {
+                width: 100%;
+                padding: 1rem;
+                margin-bottom: 5px;
+                border: none;
+                outline-color: #fd57bf;
+            }
+            
+            input[type="submit"] {
+                width: initial;
+                background-color: #fd57bf;
+                color: #eee;
+                padding: 1rem 2rem;
+                border-radius: .8rem;
+                cursor: pointer;
+                transition: background-color 650ms;
+            }
+            
+            input[type="submit"]:hover {
+                color: #221e3f;
+                background-color: #ffe838;
+            }
+            
+            .section-heading h1 {
+                text-align: center;
+                padding-top: 5rem;
+                color: #fff;
+            }
+            
+            .backtohome {
+                float: right;
+                margin-top: 12rem;
+                margin-right: 1rem;
+            }
+            /* end contact page */
+            /* Media query */
+            /* Contact page media query */
+            
+            @media screen and (max-width: 950px) {
+                .container-contact {
+                    flex-direction: column;
+                }
+                .contact-info,
+                .contact-form {
+                    margin: 30px 50px;
+                }
+                .contact-form h2 {
+                    font-size: 30px;
+                }
+                .contact-form .text-box {
+                    width: 100%;
+                }
+            }
+            /* end contact page media query */
+            
+            @media (max-width: 991px) {
+                .showcase,
+                .showcase header {
+                    padding: 40px;
+                }
+                .text h2 {
+                    font-size: 3em;
+                }
+                .text h3 {
+                    font-size: 2em;
+                }
+            }
+            /* end page media query */
+            /* satrt home page media query */
+            
+            @media (max-width: 400px) {
+                ul {
+                    flex-direction: column;
+                }
+            }
+            /* end home page media query */
+            /* start line-up media query */
+            
+            @media (max-width: 849px) {
+                #header-lineup ul {
+                    flex-direction: column;
+                }
+                .container-datum div {
+                    width: 100%;
+                }
+                .box-lineup {
+                    grid-template-rows: 1fr;
+                    align-items: center;
+                    width: 100%;
+                }
+            }
+            /* start ticket media query */
+            
+            @media (max-width: 600px) {
+                .item-ticket {
+                    grid-row: span 2 /auto;
+                }
+            }
